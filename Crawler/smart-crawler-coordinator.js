@@ -1,6 +1,5 @@
 const nonBrowserCrawler = require('./non-browser-crawler');
 const browserCrawler = require('./crawler'); // The existing Playwright crawler
-const database = require('./database-config');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
