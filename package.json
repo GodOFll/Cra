@@ -2,10 +2,10 @@
   "name": "crawler-workspace",
   "version": "1.0.0",
   "description": "Web Crawler API Service",
-  "main": "index.js",
+  "main": "Crawler/index.js",
   "scripts": {
-    "start": "node index.js",
-    "crawler": "node index.js"
+    "start": "node Crawler/index.js",
+    "crawler": "node Crawler/index.js"
   },
   "dependencies": {
     "@crawlee/playwright": "^3.14.1",
