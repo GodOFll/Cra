@@ -274,7 +274,7 @@ class SmartCrawlerCoordinator {
       const contentWordCount = hasContent ? this.countWords(block.content) : 0;
 
       // Check for valid content: title OR content with 5+ words
-      if (hasTitle || (hasContent && contentWordCount >= 12)) {
+      if (hasTitle || (hasContent && contentWordCount >= 5)) {
         hasFoundValidContentInFirst10Blocks = true;
         console.log(`🔍 Found valid content in first 10 blocks at index ${i}: ${hasTitle ? 'title' : `content (${contentWordCount} words)`}`);
         break;
@@ -292,7 +292,7 @@ class SmartCrawlerCoordinator {
       const contentWordCount = hasContent ? this.countWords(block.content) : 0;
 
       // Check for valid content: title OR content with 5+ words
-      const isValidContentStart = hasTitle || (hasContent && contentWordCount >= 12);
+      const isValidContentStart = hasTitle || (hasContent && contentWordCount >= 5);
 
       if (isValidContentStart) {
         if (!currentRegion) {
